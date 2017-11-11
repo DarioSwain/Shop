@@ -1,0 +1,9 @@
+.product-card {
+    width: 400px;
+    height: 250px;
+    float: left;
+}
+
+.cart-title {
+    width: 350px;
+}

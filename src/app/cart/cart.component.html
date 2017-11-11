@@ -1,0 +1,23 @@
+<div class="cart">
+  <mat-toolbar color="warn">
+    <mat-toolbar-row>
+      <span class="cart-title">Cart</span>
+      <div class="cart-counter" *ngIf='products?.length > 0'>
+        <button mat-mini-fab color='primary'>{{ products.length }}</button>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-card class="cart-card">
+    <mat-card-content>
+      <div *ngIf='products?.length > 0; else emptyCart'>
+        <p>Products:</p>        
+        <mat-list>
+          <mat-list-item *ngFor='let product of products'>
+            {{ product.name }} - {{ product.price }}$
+          </mat-list-item>
+        </mat-list>
+      </div>
+      <ng-template #emptyCart>Cart is empty...</ng-template>
+    </mat-card-content>
+  </mat-card>
+</div>
