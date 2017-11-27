@@ -12,9 +12,4 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  onBuy() {
-    console.log('Buy Product!');
-  }
-
 }

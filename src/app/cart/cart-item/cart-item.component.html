@@ -1,0 +1,7 @@
+<div class="order-item" #orderItemContainer (mouseenter)="drawBackground()" (mouseout)="hideBackground()" [ngStyle]="{'background-color': applyBackgroundColor  ? 'red' : ''}" *ngIf="item">
+  {{ item.product.name }} - ({{ item.count }} * {{ item.product.price }}$)
+  <mat-form-field class="quantity">
+    <input #quantity matInput type="number" (ngModelChange)="changeQuantity($event)" [(ngModel)]="count" placeholder="Quantity" min="1">
+  </mat-form-field>
+  = {{item.total}}$
+</div>

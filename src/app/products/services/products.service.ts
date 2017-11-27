@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Product } from './product.model';
-import { ProductCategory } from './product-category.enum';
+import { Product } from '../models/product.model';
+import { ProductCategory } from '../models/product-category.enum';
 
 @Injectable()
 export class ProductsService {
@@ -23,7 +23,7 @@ export class ProductsService {
         // tslint:disable-next-line:max-line-length
         description: 'For 2017 Samsung have redesigned the most important component of a smartphone: the screen. With an incredible 5.8" Infinity Display with Mobile HDR certification from the UHD alliance, the Samsung Galaxy S8 is truly a wonder to behold.',
         category: ProductCategory.Electronics,
-        isAvailable: false,
+        isAvailable: true,
         price: 824.99,
         ingredients: [],
         equivalents: ['Apple iPhone X']

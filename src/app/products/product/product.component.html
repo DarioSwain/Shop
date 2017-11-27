@@ -17,7 +17,7 @@
     </div>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button *ngIf='product.isAvailable' color='primary'>BUY ({{ product.price }}$)</button>
+    <button mat-button (click)="addToCart(product)" *ngIf='product.isAvailable' color='primary'>BUY ({{ product.price }}$)</button>
     <button mat-raised-button *ngIf='!product.isAvailable' color="warn">Out of Stock</button>
   </mat-card-actions>
 </mat-card>

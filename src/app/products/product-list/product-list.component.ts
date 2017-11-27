@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ProductsService } from '../product/products.service';
-import { Product } from '../product/product.model';
+import { ProductsService } from '../services/products.service';
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-product-list',
